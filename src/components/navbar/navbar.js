@@ -15,12 +15,12 @@ const NavBar = ({ onSearch, cartItemCount }) => {
 
     return (
         <div className="wrapper">
-            <header className="container">
+            <header className="container1">
                 <div className="header py-2">
                     <div className="grid">
                         {/*---------- logo ----- */}
                         <Link to="/" className="link">
-                            <h1 className="brand">HEROTIMES</h1>
+                            <h1 className="brand">Waterfall</h1>
                         </Link>
 
                         {/* phần ------ search -------*/}
@@ -40,8 +40,8 @@ const NavBar = ({ onSearch, cartItemCount }) => {
                             </form>
                         </div>
                         {/* link tới trang tất cả sản phẩm */}
-                        <Link to='/allproducts' className="link">Tất cả Sản phẩm</Link>
-                        <Link to='/productsreview' className="link" style={{whiteSpace: 'nowrap'}}>Đánh giá sản phẩm</Link>
+                        <Link to='/allproducts' className="link">Products</Link>
+                        <Link to='/productsreview' className="link" style={{whiteSpace: 'nowrap'}}>product reviews</Link>
                         <Link to="/cart" className="link headerCart">
                             <img className="cartImg" src="/cart.svg" alt="cart" />
                             {/* nếu số lượng product lớn hơn 0 thì hiện cái này */}

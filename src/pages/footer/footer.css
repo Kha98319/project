@@ -18,7 +18,7 @@ width: 17rem;
     margin-right: 4px;
   }
   .footer {
-    background-color: #343a40;
+    background-color: pink;
     color: #fff;
     padding: 50px 0;
   }
@@ -97,6 +97,7 @@ width: 17rem;
     text-align: center;
     padding-top: 10px;
     border-top: 1px solid #555;
-    color: #868e96;
+    color: white;
+    background-color: pink;
   }
   

@@ -50,12 +50,17 @@ img {
 
 .price {
   font-family: sans-serif;
+  color: white;
 }
 
 /* 032535 - ffb515 - ff9a00 - ff5700 - da4302  */
 
 /* Layout */
-
+.container1 {
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: pink;
+}
 .container {
   padding: 0 30px;
   margin: 0 auto;
@@ -69,8 +74,8 @@ img {
   /* margin: 20px; */
   box-shadow: rgb(189, 189, 192) 0px 15px 15px -5px;
   border-radius: 20px;
-  background-color: #fff;
   -webkit-border-radius: 20px;
+  background-color: pink;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
@@ -428,8 +433,9 @@ img {
   font-weight: bold;
 }
 
+
 .titleLink {
-  color: #4a4a4a;
+  color: white;
   text-decoration: none;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -456,8 +462,8 @@ img {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background: #007fff;
-  color: #fff;
+  background: grey;
+  color: white;
   border: none;
   font-size: 2rem;
   border-radius: 50%;

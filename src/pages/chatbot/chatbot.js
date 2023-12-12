@@ -45,7 +45,7 @@ const handleinput =(e)=> setMessage(e.target.value)
         </form>
       </div>
       <div onClick={handleChatbot} className='chatbtn'>
-        chat
+        mess
       </div>
     </div>
   );

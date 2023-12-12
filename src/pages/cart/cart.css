@@ -19,7 +19,7 @@
 }
 
 .cartItem {
-    background-color: #fff;
+    background-color: pink;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -48,7 +48,9 @@
     height: 100px;
     width: 100px;
 }
-
+h2 {
+    color: white;
+}
 .itemControl {
     text-align: center;
 }
@@ -68,11 +70,12 @@
 
 .payment {
     align-self: start;
-    background-color: #fff;
+    background-color: pink;
 }
 
 .summary {
     border-top: dotted 3px #f2f2f3;
+    color: white;
 }
 
 .addQty,

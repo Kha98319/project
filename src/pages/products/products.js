@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
-import { FakeStoreApi } from '../../services/fake-store-api'
 import { useSearchParams } from "react-router-dom"
 import { Item } from "../../components/item"
 import { useCart } from "../../context/cart"
-
+import {Allproductss} from '..//..//img/img'
 const Products = () => {
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
@@ -15,8 +14,8 @@ const Products = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             setLoading(true);
-            const products = searchQuery ? await FakeStoreApi.fetchProductsBySearchQuery(searchQuery) : await FakeStoreApi.fetchAllProducts();
-            setProducts(products);
+            const newPorod = Allproductss.map((product)=> product)
+            setProducts(newPorod);
             setLoading(false)
         }
         fetchProducts().catch(console.error)

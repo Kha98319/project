@@ -11,7 +11,7 @@ const Cart = () => {
     const cartTotal = () => {
         return cart.reduce((acc, item) => acc + item.product.price * item.quantity, 0)
     }
-
+    console.log(cart)
     const round = (value, decimals) => {
         return Number(Math.round(value + "e" + decimals) + "e-" + decimals)
     }
@@ -35,7 +35,7 @@ const Cart = () => {
                                         </div>
                                         <div className="itemDesc">
                                             <div className="title">
-                                                <Link to={"/product/" + item.product.id} className="titleLink">
+                                                <Link to={"/product/" + item.product.id} className="titleLink1">
                                                     {item.product.title}
                                                 </Link>
                                             </div>
@@ -52,7 +52,7 @@ const Cart = () => {
                                                 </button>
                                                 <span className="mx-1">{item.quantity}</span>
                                                 <button
-                                                    onClick={() => decreaseQuantity(item.product.id)}
+                                                    onClick={() => decreaseQuantity(item.product.id) }
                                                     disabled={item.quantity === 1}
                                                     className="removeQty"
                                                 >

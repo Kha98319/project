@@ -35,11 +35,7 @@ const Footer = ()=>{
 
                 <div className="footer-contact">
                     <h2>Contact Us</h2>
-                    <form action="#" className="contacta" onSubmit={handleSubmit}>
-                    <input ref={inaref} type="email" name="email" className="text-input " placeholder="Your email address"/>
-                    <textarea name="message" className="text-input contact-input1" placeholder="Your message"></textarea>
-                    <button type="submit" className="btn btn-primary">Send</button>
-                    </form>
+                    hello can you cantact to me!
                 </div>
                 </div>
 

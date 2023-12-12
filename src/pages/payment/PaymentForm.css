@@ -15,13 +15,19 @@
   border-radius: 50px;
   -webkit-border-radius: 50px;
 }
+div {
+  color: white;
+}
+h2 {
+  color: white;
+}
 .payment-container {
     margin: auto;
     max-width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: green;
   }
   
   .form {
