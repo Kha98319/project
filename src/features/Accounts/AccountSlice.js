@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit'
-
+import { createSlice } from '@reduxjs/toolkit';
+// phần react redux
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {

@@ -1,9 +1,9 @@
-import './product.css'
 import { useEffect, useState } from "react"
-import { FakeStoreApi } from '../../services/fake-store-api'
 import { Link, useParams } from "react-router-dom"
 import { useCart } from "../../context/cart"
-
+import { FakeStoreApi } from '../../services/fake-store-api'
+import './product.css'
+// trang thông tin product
 const Product = () => {
     const [loading, setLoading] = useState(true);
     const [productss, setProduct] = useState();

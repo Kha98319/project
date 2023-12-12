@@ -1,6 +1,7 @@
-import './loggin.css'
-import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import './loggin.css';
+// trang đăng nhập
 function Loggin() {
     const [name,setName] = useState('')
     const [pwd,setPwd] = useState('')
@@ -33,6 +34,7 @@ const changePwd = (e)=> setPwd(e.target.value)
         <h2>Đăng nhập</h2>
     </div>
         <div className="login-form">
+            // khi nhấn đăng nhập gọi tới hàm handleSubmit
             <form onSubmit ={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="username">Tên đăng nhập:</label>

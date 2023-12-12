@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
-import './register.css'
+import { useState } from 'react';
+import './register.css';
 
-
+// trang đăng kí 
 import { useNavigate } from "react-router-dom";
 function Register() {
     const [name,setName] = useState('')
     const [pwd,setPwd] = useState('')
     const navigate = useNavigate()
 
-
+// xử lý khi nhấn nút đăng kí
 const handleSubmit = (event) =>{
     event.preventDefault()
     // lấy tài khoản cũ từ localtrange 
@@ -21,7 +21,7 @@ const handleSubmit = (event) =>{
         handleNewAccount()
     }
 }
-
+// xử lý tài khoản cũ
 const handleOldAccount=(accounts)=>{
     let check = false
     // lặp qua những tài khoản cũ từ tham số account đã lấy từ localtrange
@@ -45,6 +45,7 @@ const handleOldAccount=(accounts)=>{
     navigate("/loggin")
     window.location.reload()
 }
+// xử lý tài khoản mới
 const handleNewAccount=()=>{
     // xử lý tài khoản mới khi chưa có trên localtrange
     localStorage.setItem('Account', JSON.stringify(
@@ -69,6 +70,7 @@ const handleNewAccount=()=>{
             <h2>Đăng ký</h2>
         </div>
         <div className="register-form">
+            // khi nhấn đăng kí gọi hàm handleSubmit
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="username">Tên đăng nhập:</label>

@@ -1,18 +1,17 @@
-import img from './BocT_shirt.jpg'
 import img1 from './BoT_shirt.jpg'
+import img from './BocT_shirt.jpg'
 import img2 from './BrowT_shirt.jpg'
 import img3 from './ComboPoLoT_shirt.jpg'
 import img4 from './ComboT_shirt.jpg'
 import img5 from './DenT_shirt.jpg'
 import img6 from './GregT_shirt.jpg'
-import img7 from './HongT_shirt.jpg'
-import img8 from './hinh-nen-may-tinh-4k-thien-nhien-2.webp'
-import img9 from './HongT_shirt.jpg'
+import { default as img7, default as img9 } from './HongT_shirt.jpg'
 import img10 from './OrangeT_shirt.jpg'
 import img11 from './TagT_shirt.jpg'
-import img12 from './XanhdamT_shirt.jpg'
 import img13 from './XanhT_shirt.jpg'
-
+import img12 from './XanhdamT_shirt.jpg'
+import img8 from './hinh-nen-may-tinh-4k-thien-nhien-2.webp'
+// tất cả các ảnh
 export const Allproductss = 
 [
     {

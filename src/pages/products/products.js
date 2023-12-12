@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { Item } from "../../components/item"
 import { useCart } from "../../context/cart"
-import {Allproductss} from '..//..//img/img'
+import { Allproductss } from '..//..//img/img'
+// trang Tất cả products
 const Products = () => {
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
@@ -51,3 +52,4 @@ const Products = () => {
 }
 
 export { Products }
+

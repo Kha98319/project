@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/cart';
 import './PaymentForm.css';
+// phần thanh toán
 const PaymentForm = () => {
   // khai báo usestate và gọi usecontext từ usecart
   const { cart,RemoveAllCart } = useCart()
@@ -26,7 +27,7 @@ const round = (value, decimals) => {
     // lấy tài khoản trên localstrang rồi so sánh với mk input xem đúng không rồi alert ra thành công
     e.preventDefault()
     const currentAccount = JSON.parse(localStorage.getItem('AccountCurrent'))
-    
+    // nếu mật khẩu đúng thì xuất ra thanh toán thành công xóa hết caard và chuyển đến trang chủ
     if(currentAccount.pwd === password) {
       alert('thanh toán thành công')
       RemoveAllCart()
@@ -54,6 +55,7 @@ const round = (value, decimals) => {
           <label className='label'>Ngày tháng năm:</label>
           <input className='input1' type='date' value={expiryDate} onChange={(e) => setExpiryDate(e.target.value)} />
         </div>
+        
         <div className='div'>
           <label className='label'>Mã giảm giá:</label>
           <input className='input' type="text" value={discountCode} onChange={(e) => setDiscountCode(e.target.value)} />

@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Account from "../../pages/account/account";
-
+// phần header
+// tạo một component nhận 2 tham số là onSearch và cartItemCount
 const NavBar = ({ onSearch, cartItemCount }) => {
-
+// tọa một use state có giá trị chuỗi rỗng 
     const [searchQuery, setSearchQuery] = useState('');
-
+// gọi hàm handleSubmit giải quyết khi nhấn nút search 
     const handleSubmit = () => {
+        // nếu tìm kiếm đúng thì gọi tham số ónearch
         if (searchQuery.trim().length) {
             onSearch(searchQuery.trim())
         }
+        // set searchQuery chuỗi rỗng 
         setSearchQuery('')
     }
 
@@ -58,4 +61,5 @@ const NavBar = ({ onSearch, cartItemCount }) => {
     )
 }
 
-export { NavBar }
+export { NavBar };
+

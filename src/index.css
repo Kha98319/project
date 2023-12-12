@@ -3,7 +3,10 @@
 :root {
   --blue: #007fff;
 }
-
+.flexaa {
+  display: flex;
+  flex-direction: column;
+}
 .Appp {
   position: relative;
 }
@@ -32,7 +35,29 @@ body {
   background-color: #f9fafb;
   line-height: 1.6rem;
 }
-
+.card11 {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  /* margin: 20px; */
+  box-shadow: rgb(189, 189, 192) 0px 15px 15px -5px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: pink;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
 * {
   padding: 0;
   margin: 0;

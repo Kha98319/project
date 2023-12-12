@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
+// tạo một component là Item truyền vào 1 object có 2 tham số là dât và add to card
 
 const Item = ({ data, addToCart }) => {
-
+// tạo một object chứa dữ liệu từ tham số data
     const { id, image, title, price } = data
-
+    
     return (
-        <div className="card">
-            <div className="grid">
+        <div className="card11">
+            <div className="flexaa">
                 <div className="image">
                     <img src={image} alt="" />
                 </div>
@@ -29,3 +30,4 @@ const Item = ({ data, addToCart }) => {
 }
 
 export { Item }
+

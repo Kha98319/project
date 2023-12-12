@@ -1,20 +1,30 @@
-import { Link } from "react-router-dom"
+// lấy thẻ chuyển hướng link và điều hướng usenavigate trong react-routerdom
+import { Link, useNavigate } from "react-router-dom"
+// lấy cart
 import { useCart } from "../../context/cart"
+// nhập file css cart vào
+
 import "./cart.css"
-import { useNavigate } from "react-router-dom"
+// tạo biến SHIPPING_CHARGES có giá trị 25
 const SHIPPING_CHARGES = 25
-
+// trang cart
+// tạo một component card
 const Cart = () => {
+    // tạo biến lưu use điều hướng
     const navigate = useNavigate()
+    // lấy cart xóa cart removeFromCart , tăng increaseQuantity, giảm decreaseQuantity từ useCart import { useCart } from "../../context/cart"
     const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart()
-
+// tính tổng cart
     const cartTotal = () => {
+        // trả về giá được tính toán
         return cart.reduce((acc, item) => acc + item.product.price * item.quantity, 0)
     }
     console.log(cart)
+    // chuyển giá thành số
     const round = (value, decimals) => {
         return Number(Math.round(value + "e" + decimals) + "e-" + decimals)
     }
+   // khi click thanh toán thì chuyển trang
     const handlepayment =()=>{
         // chuyển sang trang thanh toán
         navigate('/payment')
@@ -79,6 +89,7 @@ const Cart = () => {
                                 </div>
                                 <div className="flex py-1">
                                     <span>Shipping Fee:</span>
+                                    //giá sản phẩm
                                     <span className="price">${SHIPPING_CHARGES}</span>
                                 </div>
                                 <div className=" flex py-1">
@@ -100,3 +111,4 @@ const Cart = () => {
 }
 
 export { Cart }
+

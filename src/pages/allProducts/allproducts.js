@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import { FakeStoreApi } from '../../services/fake-store-api'
 import { useSearchParams } from "react-router-dom"
 import { Item } from "../../components/item"
 import { useCart } from "../../context/cart"
-
+import { FakeStoreApi } from '../../services/fake-store-api'
+// tọa một hàm render ra tất cả sản phẩm 
 const Allproducts = () => {
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
@@ -52,3 +52,4 @@ const Allproducts = () => {
 }
 
 export { Allproducts }
+
