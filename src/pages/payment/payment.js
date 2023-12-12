@@ -1,9 +1,8 @@
 // PaymentForm.js
-import { useCart } from '../../context/cart';
-import React, { useEffect, useState } from 'react';
-import './PaymentForm.css';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-const Email = JSON.parse(localStorage.getItem('AccountCurrent')).name
+import { useCart } from '../../context/cart';
+import './PaymentForm.css';
 const PaymentForm = () => {
   // khai báo usestate và gọi usecontext từ usecart
   const { cart,RemoveAllCart } = useCart()
@@ -45,7 +44,7 @@ const round = (value, decimals) => {
       <form className='form' onSubmit={handleSubmit}>
         <div className='div1'>
           <label className='label'>Email:</label>
-          <div className='Email'>{Email}</div>
+          <div className='Email'>nhan15@gmail.com</div>
         </div>
         <div className='div1'>
           <label className='label'>Số tiền:</label>
