@@ -23,7 +23,7 @@ const NavBar = ({ onSearch, cartItemCount }) => {
                     <div className="grid">
                         {/*---------- logo ----- */}
                         <Link to="/" className="link">
-                            <h1 className="brand">Waterfall</h1>
+                            <h1 className="brand">Sunflower</h1>
                         </Link>
 
                         {/* phần ------ search -------*/}
